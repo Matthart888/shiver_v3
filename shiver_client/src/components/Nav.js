@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { Header, Navigation } from 'react-mdl';
+import { Header, Navigation, Textfield } from 'react-mdl';
 import { Link } from 'react-router-dom';
 
 class Nav extends Component {
     render() {
         return(
-            <Header title={<span><span style={{ color: 'white' }}><strong>Shiver</strong></span></span>}>
+            <Header title={<span><Link className="title" to="/"><strong>Shiver</strong></Link></span>}>
                 <Navigation>
+                    <Textfield 
+                        className="searchBar"
+                        value="Search"
+                        onChange={() => {}}
+                        label="Search2"
+                    />
                     <Link to="/">Home</Link>
                     <Link to="/news">News</Link>
                     <Link to="/tips&tricks">Tips & Tricks</Link>

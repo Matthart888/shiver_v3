@@ -7,12 +7,14 @@ import Home from './components/Home'
 
 function App() {
   return (
-    <div style={{height: '100vh', position: 'relative'}}>
+    <div className="dislay-big-content" style={{height: '100vh', position: 'relative'}}>
       <Layout fixedHeader>
         <Nav />
 
         <Content>
-          <Home />
+          <div className="page-content">
+            <Home />
+          </div>
         </Content>
       </Layout>
     </div>
