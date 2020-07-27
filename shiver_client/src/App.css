@@ -37,32 +37,46 @@
   }
 }
 
-Header {
-  background: #000046;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+/* Header {
+  background: #000046;  fallback for old browsers
+  background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  Chrome 10-25, Safari 5.1-6
+  background: linear-gradient(to left, #1CB5E0, #000046); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+} */
 
-.searchBar{
-  background-color: white;
-  border-radius: 25px;
-}
 
-.home-grid {
+
+/* .home-grid {
   display: flex;
   text-align: center;
   position: fixed;
-  top: 0;
+  top: 64px;
   left: 0;
   width: 100vw;
   height: 100vh;
-
 }
 
-.title {
+.homeColumn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+.card {
+  margin: auto;
+} */
+
+i {
+  font-size: 5em;
+}
+
+h1 {
   color: white;
   font-style: italic;
-  font-family: 'Iceland', serif;
+  font-family: 'Iceland';
   font-size: 5rem;
   text-decoration: none;
 }
@@ -71,4 +85,11 @@ body {
   background: #000046;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: auto;
+}
+
+footer {
+  background-color: #282c34;
+  height: 100px;
+  width: 100vw;
 }
