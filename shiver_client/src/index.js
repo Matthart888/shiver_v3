@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-import 'react-mdl/extra/material.css';
-import 'react-mdl/extra/material.js';
 // import { BrowserRouter } from 'react-router-dom';
 
 import { createBrowserHistory } from 'history';
@@ -14,7 +12,7 @@ const routes = [
   {
     path: '/',
     component: App,
-    name: 'Main-Page'
+    name: 'Home-Page'
   }
 ]
 const root = document.getElementById('root');

@@ -1,66 +1,15 @@
 import React, { Component } from 'react';
-// import { Grid, Cell, Card, CardTitle, CardText, CardActions, CardMenu, Button, IconButton } from 'react-mdl';
+
+/**
+ * @author
+ * @function Home
+ **/
 
 class Home extends Component {
     render() {
         return(
             <div>
-                {/* <Grid className="home-grid">
-                    <Cell className="homeColumn" col={12}>
-                        <Card className="card" shadow={0} style={{width: '512px', margin: 'auto'}}>
-                            <CardTitle style={{color: 'black', height: '176px', background: 'url() center / cover'}}>Welcome</CardTitle>
-                            <CardText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Mauris sagittis pellentesque lacus eleifend lacinia...
-                            </CardText>
-                            <CardActions border>
-                                <Button colored>Get Started</Button>
-                            </CardActions>
-                            <CardMenu style={{color: '#fff'}}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-                        <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
-                            <CardTitle style={{color: 'black', height: '176px', background: 'url() center / cover'}}>Welcome</CardTitle>
-                            <CardText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Mauris sagittis pellentesque lacus eleifend lacinia...
-                            </CardText>
-                            <CardActions border>
-                                <Button colored>Get Started</Button>
-                            </CardActions>
-                            <CardMenu style={{color: '#fff'}}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-                        <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
-                            <CardTitle style={{color: 'black', height: '176px', background: 'url() center / cover'}}>Welcome</CardTitle>
-                            <CardText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Mauris sagittis pellentesque lacus eleifend lacinia...
-                            </CardText>
-                            <CardActions border>
-                                <Button colored>Get Started</Button>
-                            </CardActions>
-                            <CardMenu style={{color: '#fff'}}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-                        <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
-                            <CardTitle style={{color: 'black', height: '176px', background: 'url() center / cover'}}>Welcome</CardTitle>
-                            <CardText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Mauris sagittis pellentesque lacus eleifend lacinia...
-                            </CardText>
-                            <CardActions border>
-                                <Button colored>Get Started</Button>
-                            </CardActions>
-                            <CardMenu style={{color: '#fff'}}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-                    </Cell>
-                </Grid> */}
+               content
             </div>
         )
     }
