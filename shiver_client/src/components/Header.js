@@ -24,7 +24,8 @@ class Header extends Component {
                             {/* <form onSubmit={submitSearch()}>
                                 <input type="text" className="searchInput" placeholder="Search" />
                             </form> */}
-                            <i className="fa fa-search" aria-hidden="true" />
+                            <input type="text" placeholder="Search" />
+                            <i className="fa fa-search" aria-hidden="true" style={{margin: "5px" }}/>
                         </div>
                         <Link className="navLink" to="/">Home</Link>
                         <Link className="navLink" to="/news">News</Link>

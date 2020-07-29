@@ -53,6 +53,10 @@ header {
   color: rgb(110, 91, 196);
 }
 
+.searchBar{
+  display: flex;
+}
+
 body {
   background: #000046;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */

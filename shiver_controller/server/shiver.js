@@ -18,17 +18,17 @@ router.get('/', (req, res) => {
 });
 
 // Specific Index
-router.get('/tipsandtricks', (req, res) => {
-    Post.find({catagory: 'Tips and Tricks'}, (error, allPosts) => {
+router.get('/tips&tricks', (req, res) => {
+    Post.find({catagory: 'Tips & Tricks'}, (error, allPosts) => {
          // define error
          console.log(allPosts)
          if (error) {
             res.send(error)
         } else {
-            // render all tips and tricks posts
+            // render all tips & tricks posts
             res.render('Index', { 
                 posts: allPosts,
-                catagory: 'Tips and Tricks'});
+                catagory: 'Tips & Tricks'});
         };
     });
 });
