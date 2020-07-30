@@ -1,27 +1,24 @@
 import React from 'react';
 import './App.css';
 
-// import { Layout, Content } from 'react-mdl';
 import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
 
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
 function App() {
   return (
-    <div>
-      <Header />
-        <div className="page-content">
-          <Home /> 
-        </div>
-      <Footer />
-    </div>
-    // <div className="dislay-big-content" style={{height: '100vh', position: 'relative'}}>
-    //   <Layout fixedHeader>
-    //     <Content>
-        
-    //     </Content>
-    //   </Layout>
-    // </div>
+    <Router>
+      <div>
+        <Header />
+          <div className="page-content">
+            <Route path="/" component={Home} />
+          </div>
+        <Footer />
+      </div>
+    </Router>
+    
   );
 }
 

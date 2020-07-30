@@ -11,8 +11,10 @@ class Footer extends Component {
         return(
             <div>
                 <footer>
-                    Social Media Links
-                    Created by Matthew L Hart
+                    <ul>
+                        <li>Social Media Links</li>
+                        <li>Created by Matthew L Hart</li>
+                    </ul>
                 </footer>
             </div>
         )
