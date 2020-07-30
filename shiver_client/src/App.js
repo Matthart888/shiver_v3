@@ -13,7 +13,13 @@ function App() {
       <div>
         <Header />
           <div className="page-content">
-            <Route path="/" component={Home} />
+            <Route path="/" exact component={Home} />
+            <Route path="/gamerthoughts" component={GamerThoughts} />
+            <Route path="/guides" component={Guides} />
+            <Route path="/news" component={News} />
+            <Route path="/tipsandtricks" component={TipsAndTricks} />
+            <Route path="/login" component={LogIn} />
+            <Route path="/newpost" component={NewPost} />
           </div>
         <Footer />
       </div>
