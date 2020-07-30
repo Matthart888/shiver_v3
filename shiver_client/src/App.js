@@ -4,6 +4,12 @@ import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import GamerThoughts from './components/GamerThoughts';
+import Guides from './components/Guides';
+import News from './components/News';
+import TipsAndTricks from './components/TipsAndTricks';
+import LogIn from './components/LogIn';
+import NewPost from './components/NewPost';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 

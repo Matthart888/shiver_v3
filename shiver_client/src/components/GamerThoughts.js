@@ -9,7 +9,7 @@ class GamerThoughts extends Component {
   render() {
       return(
         <div>
-            
+            Gamer Thoughts
         </div>
       )
   }

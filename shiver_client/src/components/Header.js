@@ -33,7 +33,7 @@ const Header = (props) => {
                         
                     <Link className="navLink" to="/">Home</Link>
                     <Link className="navLink" to="/news">News</Link>
-                    <Link className="navLink" to="/tips&tricks">Tips & Tricks</Link>
+                    <Link className="navLink" to="/tipsandtricks">Tips And Tricks</Link>
                     <Link className="navLink" to="/guides">Guides</Link>
                     <Link className="navLink" to="/gamerthoughts">Gamer Thoughts</Link>
                     <Link className="logIn" to="/login">Log In</Link>

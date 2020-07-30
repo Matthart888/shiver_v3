@@ -9,7 +9,7 @@ class TipsAndTricks extends Component {
   render() {
       return(
         <div>
-            
+            Tips and Tricks
         </div>
       )
   }

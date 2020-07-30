@@ -9,7 +9,7 @@ class News extends Component {
   render() {
       return(
         <div>
-            
+            News
         </div>
       )
   }

@@ -9,7 +9,7 @@ class Guides extends Component {
   render() {
       return(
         <div>
-            
+            Guides
         </div>
       )
   }
