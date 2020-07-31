@@ -11,7 +11,7 @@ import TipsAndTricks from './components/TipsAndTricks';
 import LogIn from './components/LogIn';
 import NewPost from './components/NewPost';
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router,  Route } from 'react-router-dom'
 
 function App() {
   return (

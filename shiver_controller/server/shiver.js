@@ -1,25 +1,25 @@
-const express = require('express');
-const router = express.Router();
-const Post = require('../models/post.js');
 
+const Post = require('../models/post')
+
+const router = require('./server.js');
 // routes
 
 // Index
-router.get('/', (req, res) => {
+router.get('/posts', (req, res) => {
     Post.find({}, (error, allPosts) => {
          // define error
          if (error) {
             res.send(error)
         } else {
             // render all posts on main index
-            res.render('Index', { posts: allPosts});
+            res.json(allPosts);
         };
     });
 });
 
 // Specific Index
-router.get('/tips&tricks', (req, res) => {
-    Post.find({catagory: 'Tips & Tricks'}, (error, allPosts) => {
+router.get('/tipsandtricks', (req, res) => {
+    Post.find({catagory: 'Tips And Tricks'}, (error, allPosts) => {
          // define error
          console.log(allPosts)
          if (error) {
@@ -28,7 +28,7 @@ router.get('/tips&tricks', (req, res) => {
             // render all tips & tricks posts
             res.render('Index', { 
                 posts: allPosts,
-                catagory: 'Tips & Tricks'});
+                catagory: 'Tips And Tricks'});
         };
     });
 });
@@ -92,7 +92,7 @@ router.post('/', (req, res) => {
             res.send(error)
         } else {
         // Once post has been created redirect to main shiver page
-        res.redirect('/shiver')
+        res.json({ msg: "created" })
         };
     });
 });
@@ -154,7 +154,5 @@ router.put('/:id', (req, res) => {
         }
     });
 });
-
-
 
 module.exports = router
