@@ -79,7 +79,7 @@ router.get('/gamerthoughts', (req, res) => {
 });
 
 // New
-router.get('/new', (req, res) => {
+router.get('/newpost', (req, res) => {
     res.render('New');
 });
 

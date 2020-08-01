@@ -13,6 +13,27 @@
 <hr>
 
 <h3>Technologies used</h3>
-<list>
-  
-</list>
+<ul>
+<li>JavaScript</li>
+<li>React</li>
+<li>Mongoose</li>
+<li>Express</li>
+</ul>
+
+<hr>
+
+<h3>MVP Goals</h3>
+<ul>
+<li>Front End Fully Functional</li>
+<li>Back End Routes Functioning</li>
+<li>Full CRUD functionality usable in the front end</li>
+<li>Video Uploading and Implementation</li>
+</ul>
+
+<h3>Stretch Goals</h3>
+<ul>
+<li>User Authentication</li>
+<li>Refactoring and organizing component files</li>
+<li></li>
+<li></li>
+</ul>

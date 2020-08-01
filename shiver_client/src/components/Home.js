@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import GamerThoughts from './GamerThoughts';
 import PostRepo from './../data/posts/PostRepo';
+import CreateButton from './buttons/CreateButton';
 
 /**
  * @author
@@ -25,6 +26,9 @@ class Home extends Component {
         return(
             <div>
                {this.state === undefined || this.state==null? '' : JSON.stringify(this.state)}
+               <div>
+                   <CreateButton />
+               </div>
             </div>
         )
     }
