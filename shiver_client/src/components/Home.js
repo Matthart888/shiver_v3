@@ -24,7 +24,7 @@ class Home extends Component {
 
     render() {
         return(
-            <div>
+            <div className="container">
                {this.state === undefined || this.state==null? '' : JSON.stringify(this.state)}
                <div>
                    <CreateButton />

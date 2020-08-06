@@ -8,7 +8,7 @@ import GamerThoughts from './components/GamerThoughts';
 import Guides from './components/Guides';
 import News from './components/News';
 import TipsAndTricks from './components/TipsAndTricks';
-import LogIn from './components/LogIn';
+// import LogIn from './components/LogIn';
 import NewPost from './components/NewPost';
 
 import { BrowserRouter as Router,  Route } from 'react-router-dom'
@@ -24,7 +24,7 @@ function App() {
             <Route path="/guides" component={Guides} />
             <Route path="/news" component={News} />
             <Route path="/tipsandtricks" component={TipsAndTricks} />
-            <Route path="/login" component={LogIn} />
+            {/* <Route path="/login" component={LogIn} /> */}
             <Route path="/newpost" component={NewPost} />
           </div>
         <Footer />

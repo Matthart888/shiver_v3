@@ -44,7 +44,7 @@ header {
 .logIn {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 120px;
   margin: 5px;
   text-decoration: none;
   color: white;
