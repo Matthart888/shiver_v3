@@ -79,6 +79,10 @@ body {
   margin: 0 10%;
 }
 
+.formContainer {
+  height: 50px;
+}
+
 .page-content {
   height: 500px;
   background-color: #7182a5;

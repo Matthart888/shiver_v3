@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import GamerThoughts from './GamerThoughts';
 import PostRepo from './../data/posts/PostRepo';
 import CreateButton from './buttons/CreateButton';
+import PostCard from './PostCard';
 
 /**
  * @author
@@ -16,17 +17,25 @@ class Home extends Component {
 
     componentDidMount(){
         new PostRepo().getOnePostFromCatagories()
-        .then(arr => {
-            console.log("recieved json " + arr)
-            this.setState(arr)
+        .then(obj => {
+            let arr = new Array();
+            for(let item in obj) {
+                arr.push(obj[item])
+            }
+            console.log(arr, obj)
+            this.setState(arr); 
         })
     }
 
     render() {
+        
+        const isEmpty = this.state === undefined || this.state === null || this.state.length === 0 
+        const hasContent=(!isEmpty)
+        
         return(
             <div className="container">
-               {this.state === undefined || this.state==null? '' : JSON.stringify(this.state)}
-               <div>
+                {!hasContent ? "no cards" : Object.keys(this.state).map(key => <PostCard NewPost={this.state[key]} key={key}/>)}
+                <div>
                    <CreateButton />
                </div>
             </div>

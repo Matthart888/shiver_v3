@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import CreateButton from './buttons/CreateButton';
 
 /**
 * @author
@@ -10,6 +11,9 @@ class News extends Component {
       return(
         <div>
             News
+            <div>
+              <CreateButton />
+            </div>
         </div>
       )
   }

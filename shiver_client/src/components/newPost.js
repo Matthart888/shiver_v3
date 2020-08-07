@@ -9,7 +9,6 @@ class NewPost extends Component {
         summary: "",
         post: "",
         posts: [],
-    
     }
 
     handleSubmit = (e) => {
@@ -42,7 +41,7 @@ class NewPost extends Component {
 
   render() {
     return (
-        <div>
+        <div className="formContainer">
             <h1>New Post</h1>
             <form onSubmit={this.handleSubmit} action="/" method="POST">
                 <div className="form-group">
