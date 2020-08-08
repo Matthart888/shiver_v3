@@ -8,7 +8,8 @@
 
 <hr>
 
-<h3>User Stories</h3>
+<h3>Leasons Learned</h3>
+My major goal for this project was to learn how to upload videos or images from a user to a website or application. What this project turned into was a full and in depth guide to using and implimenting Create-React-App. While I did do a lot of research on how to upload videos, I hit a few road bumps along the way, and was unable to actually impliment that feature into the site. That being said, these road bumps I found working through my application gave me a much better understanding of state, and the React Life cycle and how to work with Create React App overall.
 
 <hr>
 
@@ -27,13 +28,11 @@
 <li>Front End Fully Functional</li>
 <li>Back End Routes Functioning</li>
 <li>Full CRUD functionality usable in the front end</li>
-<li>Video Uploading and Implementation</li>
 </ul>
 
 <h3>Stretch Goals</h3>
 <ul>
 <li>User Authentication</li>
 <li>Refactoring and organizing component files</li>
-<li></li>
-<li></li>
+<li>Video Uploading and Implementation</li>
 </ul>
