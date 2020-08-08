@@ -10,15 +10,15 @@ import News from './components/News';
 import TipsAndTricks from './components/TipsAndTricks';
 // import LogIn from './components/LogIn';
 import NewPost from './components/NewPost';
+import Post from './components/Post';
+import Edit from './components/Edit';
 
 import { BrowserRouter as Router,  Route } from 'react-router-dom'
 
 function App() {
   return (
     <Router>
-      <div>
         <Header />
-          <div className="page-content">
             <Route path="/" exact component={Home} />
             <Route path="/gamerthoughts" component={GamerThoughts} />
             <Route path="/guides" component={Guides} />
@@ -26,9 +26,9 @@ function App() {
             <Route path="/tipsandtricks" component={TipsAndTricks} />
             {/* <Route path="/login" component={LogIn} /> */}
             <Route path="/newpost" component={NewPost} />
-          </div>
+            <Route exact path="/post/:post_id" component={Post}/>
+            <Route exact path="/post/:post_id/edit" component={Edit}/>
         <Footer />
-      </div>
     </Router>
     
   );

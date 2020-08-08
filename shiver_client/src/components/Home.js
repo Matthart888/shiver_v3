@@ -16,7 +16,7 @@ class Home extends Component {
      */
 
     componentDidMount(){
-        new PostRepo().getOnePostFromCatagories()
+        PostRepo.getOnePostFromCatagories()
         .then(obj => {
             let arr = new Array();
             for(let item in obj) {
@@ -31,13 +31,15 @@ class Home extends Component {
         
         const isEmpty = this.state === undefined || this.state === null || this.state.length === 0 
         const hasContent=(!isEmpty)
-        
+
         return(
             <div className="container">
+                <div className="row">
                 {!hasContent ? "no cards" : Object.keys(this.state).map(key => <PostCard NewPost={this.state[key]} key={key}/>)}
+                </div>
                 <div>
                    <CreateButton />
-               </div>
+                </div>
             </div>
         )
     }

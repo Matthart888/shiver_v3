@@ -17,71 +17,18 @@ router.get('/posts', (req, res) => {
     });
 });
 
-// Specific Index
-router.get('/tipsandtricks', (req, res) => {
-    Post.find({catagory: 'Tips And Tricks'}, (error, allPosts) => {
+// find specific catagory
+router.get('/posts/catagories/:catagory', (req, res) => {
+    Post.find({catagory: req.params.catagory}, (error, allPosts) => {
          // define error
          console.log(allPosts)
          if (error) {
             res.send(error)
         } else {
-            // render all tips & tricks posts
-            res.render('Index', { 
-                posts: allPosts,
-                catagory: 'Tips And Tricks'});
+            res.json(allPosts)
         };
     });
-});
-
-router.get('/news', (req, res) => {
-    Post.find({catagory: 'News'}, (error, allPosts) => {
-         // define error
-         console.log(allPosts)
-         if (error) {
-            res.send(error)
-        } else {
-            // render all the news posts
-            res.render('Index', { 
-                posts: allPosts,
-                catagory: 'News'});
-        };
-    });
-});
-
-router.get('/guides', (req, res) => {
-    Post.find({catagory: 'Guides'}, (error, allPosts) => {
-         // define error
-         console.log(allPosts)
-         if (error) {
-            res.send(error)
-        } else {
-            // render all guides posts
-            res.render('Index', { 
-                posts: allPosts,
-                catagory: 'Guides'});
-        };
-    });
-});
-
-router.get('/gamerthoughts', (req, res) => {
-    Post.find({catagory: 'Gamer Thoughts'}, (error, allPosts) => {
-         // define error
-         console.log(allPosts)
-         if (error) {
-            res.send(error)
-        } else {
-            // render all tips and tricks posts
-            res.render('Index', { 
-                posts: allPosts,
-                catagory: 'Gamer Thoughts'});
-        };
-    });
-});
-
-// New
-router.get('/newpost', (req, res) => {
-    res.render('New');
-});
+})
 
 // Create
 router.post('/', (req, res) => {
@@ -107,14 +54,14 @@ router.get('/:id', (req, res) => {
             res.send(error)
         } else {
         // render the Show route and pass it the foundPost
-        res.render('Show', { post: foundPost });
+        res.json(foundPost);
         }
     });
 });
 
 
 // Delete
-router.delete('/:id', (req, res) => {
+router.delete('/posts/:id', (req, res) => {
     // Delete document from collection
     Post.findByIdAndRemove(req.params.id, (error, post) => {
         // define error
@@ -122,21 +69,21 @@ router.delete('/:id', (req, res) => {
             res.send(error)
         } else {
             // after post has been deleted, redirect to main shiver page
-            res.redirect('/shiver')
+            res.json({msg: "deleted"})
         };
     });
 });
 
 // Edit 
-router.get('/:id/edit', (req, res) => {
+router.post('/posts/:id', (req, res) => {
     // Find document from the collection using mongoose model
-    Post.findById(req.params.id, (error, foundPost) => {
+    Post.findByIdAndUpdate(req.params.id, req.body, (error, foundPost) => {
         // define error
         if (error) {
             res.send(error)
         } else {
             // render the edit view and pass it the found post
-            res.render('Edit', { post: foundPost });
+            res.json({msg: "post updated"})
         }
     });
 });

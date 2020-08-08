@@ -37,11 +37,9 @@ class NewPost extends Component {
         })
     }
 
-    componentDidMount
-
   render() {
     return (
-        <div className="formContainer">
+        <div className="container">
             <h1>New Post</h1>
             <form onSubmit={this.handleSubmit} action="/" method="POST">
                 <div className="form-group">

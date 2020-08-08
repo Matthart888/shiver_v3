@@ -5,9 +5,12 @@ class CreateButton extends Component {
     render() {
         return(
             <div>
-                <button>
-                    <Link className="buttonLink" to="/newpost">Create</Link>
-                </button>
+                <Link className="buttonLink" to="/newpost">
+                    <button className="button">
+                        <div className="buttonText">Create</div>
+                        <span></span>
+                    </button>
+                </Link>
             </div>
         )
     }

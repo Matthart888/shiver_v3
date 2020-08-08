@@ -77,22 +77,103 @@ body {
   background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin: 0 10%;
+  height: 100%;
+}
+
+.container {
+  background-color: #7182a5;
+  min-height: 100%;
+  margin: 0;
+  padding: 0 1em;
+  padding-bottom: 100px;
 }
 
 .formContainer {
   height: 50px;
 }
 
-.page-content {
-  height: 500px;
-  background-color: #7182a5;
-  margin: 0
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3em;
+}
+
+.homeCard {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  background-color: aliceblue;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  width: 250px;
+  height: 250px;
+  margin: 15px;
+  padding: 5px;
+}
+
+.button {
+  
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  background: transparent;
+  overflow: hidden;
+  transition: .4s;
+}
+
+button:nth-child(1) {
+  color: #1EA0EB;
+  border: 1px solid;
+}
+
+.buttonText {
+  color: white;
+}
+
+button:hover{
+  background: linear-gradient(to left, #1CB5E0, #000046);
+  /* transition: .4s; */
+}
+button span {
+  display: flex;
+  width: 100px;
+  height: 10px;
+  background: #E5E5E5;
+  filter: blur(8px);
+  transform: rotate(180deg) translatex(10px) translateY(100px);
+  transition: .4s;
+  }
+ 
+button:hover span {
+  transform: rotate(110deg) translateX(-80px) translateY(-140px);
+}
+
+.buttonLink {
+  text-decoration: none;
+  color: white;
+}
+
+.buttons {
+  display: inline-flex;
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   background-color: #282c34;
   height: 100px;
-  width: 80%;
+  width: 100%;
+  margin-top: -100px;
+  clear: both;
 }
